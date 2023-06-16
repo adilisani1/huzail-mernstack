@@ -301,7 +301,7 @@ const Register = () => {
         const { name, email, city, complain } = complaint;
 
         try {
-            const response = await fetch('/c/complaint', {
+            const response = await fetch('http://localhost:5000/c/complaint', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
