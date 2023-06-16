@@ -25,7 +25,6 @@ router.post("/complaint", (req, res) => {
         city: req.body.city,
         complain: req.body.complain, // Make sure this value is a string
 
-
     })
     complaint
         .save()

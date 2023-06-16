@@ -17,7 +17,10 @@ const complaintSchema = new mongoose.Schema({
         type: String, // Changed to String type
         required: true
     },
-});
+},
+    {
+        timestamps: true
+    });
 
-const Complaint = mongoose.model("COMPLAINT", complaintSchema);
+const Complaint = mongoose.model("Complaint", complaintSchema);
 module.exports = Complaint;
